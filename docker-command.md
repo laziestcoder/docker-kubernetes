@@ -17,7 +17,11 @@ This file is consist of docker commands for using and accessing faster. You are 
  * FROM, RUN, CMD -> instruction -> Dockerfile keyword
  * Base Image -> ubuntu 
  * docker build -t <docker_id>/<repo_or_project_name>:<version> . // tag a docker image, the last dot is importan as context 
- * docker run -p <host_port>:<container_port> <image_id>  
+ * docker run -p <host_port>:<container_port> <image_id> 
+
+ * docker build -f  Dockerfile.dev . // for specific Dockerfile build
+ * docker run -v /app/node_modules -v $(pwd):/app <image_id> // -v flag for volume reference/ to link a volume
+ *  
 
 #### Tips: 
 * CTRL + d -> for exiting Linux CLI
