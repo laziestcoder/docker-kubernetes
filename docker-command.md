@@ -21,7 +21,7 @@ This file is consist of docker commands for using and accessing faster. You are 
 
  * docker build -f  Dockerfile.dev . // for specific Dockerfile build
  * docker run -v /app/node_modules -v $(pwd):/app <image_id> // -v flag for volume reference/ to link a volume
- *  
+ * doccker attach <image_id> // binds host bash with container  
 
 #### Tips: 
 * CTRL + d -> for exiting Linux CLI
